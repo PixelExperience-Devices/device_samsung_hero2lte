@@ -14,7 +14,7 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/herolte/device_herolte.mk)
+$(call inherit-product, device/samsung/hero2lte/device_hero2lte.mk)
 $(call inherit-product, device/samsung/hero-common/hero-common.mk)
 
 # Inherit from the 64 bit configuration
@@ -23,19 +23,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Pixel Dust stuff.
-$(call inherit-product, vendor/pixeldust/config/common_full_phone.mk)
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := pixeldust_herolte
-PRODUCT_DEVICE := herolte
-PRODUCT_MODEL := SM-G930F
+PRODUCT_NAME := aosp_hero2lte
+PRODUCT_DEVICE := hero2lte
+PRODUCT_MODEL := SM-G935F
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=heroltexx \
-    PRIVATE_BUILD_DESC="heroltexx-user 8.0.0 R16NW G930FXXU2ERD5 release-keys"
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1440
 
-BUILD_FINGERPRINT := samsung/heroltexx/herolte:8.0.0/R16NW/G930FXXU2ERD5:user/release-keys
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=hero2ltexx \
+    PRIVATE_BUILD_DESC="hero2ltexx-user 8.0.0 R16NW G935FXXU2ERD5 release-keys"
+
+BUILD_FINGERPRINT := samsung/hero2ltexx/hero2lte:8.0.0/R16NW/G935FXXU2ERD5:user/release-keys
