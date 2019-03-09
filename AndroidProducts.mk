@@ -10,4 +10,4 @@ PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/viper_hero2lte.mk \
 	$(LOCAL_DIR)/zen_hero2lte.mk \
 	$(LOCAL_DIR)/revengeos_hero2lte.mk \
-	$(LOCAL_DIR)/zirconium_her2lte.mk \
+	$(LOCAL_DIR)/zirconium_hero2lte.mk \
