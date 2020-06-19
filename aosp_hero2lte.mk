@@ -24,10 +24,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_hero2lte
+PRODUCT_NAME := aosp_hero2lte
 PRODUCT_DEVICE := hero2lte
 PRODUCT_MODEL := SM-G935F
 PRODUCT_BRAND := samsung
