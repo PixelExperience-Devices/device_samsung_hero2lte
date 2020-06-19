@@ -9,7 +9,7 @@
     "remote":      "github",
     "repository":  "PE-Q-8890/android_hardware_samsung",
     "target_path": "hardware/samsung",
-    "branch":      "PE"
+    "branch":      "ten"
   },
   {
     "remote":      "github",
