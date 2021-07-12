@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_hero2lte.mk
+    $(LOCAL_DIR)/aosp_hero2lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hero2lte-user \
-    lineage_hero2lte-userdebug \
-    lineage_hero2lte-eng
+    aosp_hero2lte-user \
+    aosp_hero2lte-userdebug \
+    aosp_hero2lte-eng
